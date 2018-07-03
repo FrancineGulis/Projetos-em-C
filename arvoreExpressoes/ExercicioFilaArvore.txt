@@ -1,0 +1,9 @@
+
+Árvores de expressões aritméticas: 
+ 
+ Segue o programa com as seguintes funções e regra: 
+ 
+ 1. Função que gera uma árvore binária a partir de uma expressão aritmética em notação infixa. Você pode criar um algoritmo que a partir da expressão infixa monta a árvore ou  antes de montar a árvore, transforma a expressão infixa em posfixa. 
+ 2. Função que avalia a árvore de expressão aritmética (calcula a expressão).
+ 3. Regra do programa 1: o usuário deve entrar com quantas expressões desejar, porém não deve ser informada a quantidade de expressões a serem entradas no sistema. Após a entrada de todas as expressões que o usuário desejar informar, o programa deverá apresentar a árvore gerada para cada expressão e o resultado de cada expressão de entrada. 
+    Regra do Programa 2: As expressões poderão conter operadores binário e unários e os operandos são valores inteiros.

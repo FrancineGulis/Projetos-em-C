@@ -1,0 +1,30 @@
+Matriz esparsa - Operações
+
+Criar um programa em C que manipule matrizes esparsas, utilizando lista linear encadeada. 
+OBS: Uma matriz é considerada esparsa quando a maioria dos seus dados são zeros.
+
+Em caso da matriz ser muito grande não é vantajoso, em termos de memória, armazenar todos os dados, até porque a maioria são zeros. Então o objetivo do trabalho é criar uma lista encadeada e armazenar somente os dados diferentes de zero, bem como a linha e a coluna onde esses dados estão localizados.
+
+Mas, no entanto, o programa deverá imprimir na saída a matriz inteira, tanto os dados diferentes de zero como os zeros.        
+
+O programa deverá ser formado pela seguinte struct: 
+struct nodo 
+{ 
+    float dado;            
+    int lin, col;            
+    struct nodo *prox;    
+    
+};
+
+E pelas seguintes funções: 
+- Uma função que faz a alocação de memória para cada nodo criado na lista; 
+- Uma função que insere na lista um nodo alocado; 
+- Uma função que lê (busca) os dados de uma lista; 
+- Uma função que libera a memória alocada para a lista; 
+- Uma função que lê os dados da matriz e inseri na lista somente os dados diferentes de zero;
+- Uma função que soma duas matrizes; 
+- Uma função que subtrai duas matrizes; 
+- Uma função que multiplica duas matrizes; 
+- Uma função que gera a matriz transposta; 
+- Uma função que imprime todos os dados da matriz, inclusive os zeros; 
+- Uma função que imprime os elementos da diagonal principal, inclusive os zeros caso existam.

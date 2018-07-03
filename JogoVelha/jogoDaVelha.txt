@@ -1,0 +1,18 @@
+Implementar no Jogo da Velha as seguintes funções: 
+
+• 1) Função que grava em um arquivo txt as informações abaixo, no seguinte formato: Nome do Jogador 1; símbolo; Nome do Jogador 2; símbolo. Exemplo: Maria; X; José; 0.
+
+• 2) Função que grava em um arquivo binário uma partida do Jogo da Velha. Os dados devem ser gravados utilizando a seguinte estrutura:
+typedef struct Velha 
+{     
+    int partida; /*número da partida (Ex: primeira(1), segunda(2), terceira(3),...., partida)*/     
+    char JogVelha[3][3]; // Tabuleiro do jogo. Armazenará as jogadas     
+    char resultado; // Resultado da Partida: X, 0 ou V(equivale a Velha - empate) 
+} Partida;
+
+A função deve ter como entrada os seguintes parâmetros: (1) parâmetro string com o nome do arquivo; (2) parâmetro Partida com os dados da partida. A função retorna 1 se a gravação for um sucesso e zero caso contrário. Os jogadores podem jogar quantas partidas desejarem. Ao final de cada partida esta função deve ser chamada para gravar os dados da partida no arquivo.
+
+• 3) Função que lê do arquivo binário os dados de uma determinada partida. A função deve ter como entrada os seguintes parâmetros: (1) parâmetro string com o nome do arquivo; (2) parâmetro inteiro com o número da partida a ser lida. A função retorna o registro com os dados da partida que foi lida.
+
+• 4) Função que imprime na tela todas as partidas (tabuleiros com as respectivas jogadas e quem ganhou) e o placar final (Ex: Maria 10 X José 5) A Maria foi a campeã do Campeonato de Jogo da Velha!!! Utilize a criatividade para implementar o layout da impressão na tela. 
+Observação: Esta função deve obrigatoriamente ler todos os dados do arquivo binário e do arquivo txt para realizar a impressão final do Campeonato! 
